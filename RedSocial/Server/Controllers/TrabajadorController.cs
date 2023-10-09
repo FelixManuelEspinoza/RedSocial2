@@ -18,9 +18,11 @@ namespace RedSocial.Server.Controllers
 
         [HttpGet]
 
-        public async Task<ActionResult<List<Publicacion>>> Get()
+        public async Task<ActionResult<List<Trabajador>>> Get()
         {
-            return await dBcontext.PuBlicaciones.ToListAsync();
+            return await dBcontext.Trabajadores.ToListAsync();
         }
+
+
     }
 }
